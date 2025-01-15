@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+}
+
+#password {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #6200EE;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700B3;
+}
+
+button:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+.options {
+  text-align: left;
+}
+
+.options label {
+  display: block;
+  font-size: 14px;
+  color: #B0B0B0;
+  margin: 5px 0;
+}
+
+input[type="text"] {
+  width: 70px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #E0E0E0;
+}
+
+#length {
+  width: 80px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#length:focus {
+  outline: none;
+  border-color: #6200EE;
+  background-color: #333;
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  #password {
+      font-size: 16px;
+  }
+
+  button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
